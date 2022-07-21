@@ -6,6 +6,12 @@
 
         <title>Laravel</title>
 
+        {{-- <!-- Bootstrap CSS -->
+        <link href="{{asset('bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+
+        <!-- Bootstrap Bundle with Popper -->
+        <script src="{{asset('bootstrap/js/bootstrap.bundle.min.js')}}"></script> --}}
+
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 
@@ -100,6 +106,7 @@
                         </div>
                     </div>
                 </div>
+
 
                 <div class="flex justify-center mt-4 sm:items-center sm:justify-between">
                     <div class="text-center text-sm text-gray-500 sm:text-left">

@@ -13,9 +13,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+Route::get('/',[App\Http\Controllers\ArticlesController::class,'index'])->name('root');
+
+
+Route::resource('articles',App\Http\Controllers\ArticlesController::class);
 
 Route::get('/dashboard', function () {
     return view('dashboard');
